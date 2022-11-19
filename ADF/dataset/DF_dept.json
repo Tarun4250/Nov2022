@@ -1,0 +1,37 @@
+{
+	"name": "DF_dept",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DF_dept",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DF Related"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dbo.dept.txt",
+				"container": "testfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

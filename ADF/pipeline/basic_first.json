@@ -1,0 +1,40 @@
+{
+	"name": "basic_first",
+	"properties": {
+		"activities": [
+			{
+				"name": "Data flow basic first",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF_basics",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 16,
+						"computeType": "General"
+					},
+					"traceLevel": "None",
+					"cacheSinks": {
+						"firstRowOnly": true
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "DF_pipelines"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-18T05:58:00Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

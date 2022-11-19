@@ -1,0 +1,9 @@
+{
+	"name": "TarunRamADF1",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0c8ca7f4-55ca-4195-9c01-06d27d790eeb",
+		"tenantId": "a2aad72a-e349-4563-9d60-6854df7bbd21"
+	}
+}

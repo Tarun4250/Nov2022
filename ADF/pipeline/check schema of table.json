@@ -1,0 +1,35 @@
+{
+	"name": "check schema of table",
+	"properties": {
+		"activities": [
+			{
+				"name": "fileschema",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "AzureSqlTable3",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"structure"
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "Schema"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-02T08:51:31Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

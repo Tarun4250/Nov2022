@@ -1,0 +1,43 @@
+{
+	"name": "check schema of file",
+	"properties": {
+		"activities": [
+			{
+				"name": "fileschema",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "fileschema",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"structure"
+					],
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Schema"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-02T08:49:57Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

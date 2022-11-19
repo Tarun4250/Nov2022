@@ -1,6 +1,7 @@
 {
 	"name": "basic_first",
 	"properties": {
+		"description": "this is dataflow of tables ",
 		"activities": [
 			{
 				"name": "Data flow basic first",
